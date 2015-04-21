@@ -479,6 +479,7 @@ public class BackgroundServicePluginLogic {
 			
 			try {
 				if (this.isServiceRunning()) {
+					Log.i("Hello","Ashok Is Here");
 					mApi.run();
 					result = new ExecuteResult(ExecuteStatus.OK, createJSONResult(true, ERROR_NONE_CODE, ERROR_NONE_MSG));
 				} else {

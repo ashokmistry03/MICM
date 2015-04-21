@@ -60,6 +60,7 @@ BackgroundServiceFactory.prototype.create = function (serviceName) {
 						[this.getServiceName()]);
 	};
 
+	
 	/**
 	  * Stops the Service
 	  *
@@ -174,6 +175,8 @@ BackgroundServiceFactory.prototype.create = function (serviceName) {
 						'getStatus',      
 						[this.getServiceName()]);
 	};
+	
+	
 
 	/**
 	  * Returns the doWork once
