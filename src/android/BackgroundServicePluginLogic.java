@@ -379,7 +379,7 @@ public class BackgroundServicePluginLogic {
 		{
 			ExecuteResult result = null;
 
-			int milliseconds = data.optInt(1, 60000);
+			int milliseconds = data.optInt(1, 20000);
 			try {
 				mApi.enableTimer(milliseconds);
 				result = new ExecuteResult(ExecuteStatus.OK, createJSONResult(true, ERROR_NONE_CODE, ERROR_NONE_MSG));
